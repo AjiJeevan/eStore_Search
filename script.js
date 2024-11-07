@@ -74,6 +74,7 @@ searchValue.addEventListener("submit", (event)=>{
         else{
             searchProductsList.innerHTML = `<h1 class="card-title text-center text-danger" >Results for "${product}"</h1> <br> ` + searchProductsEl
         }
+        document.getElementById("searchProduct").value = ""
         
     })
 })
