@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eStore</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+     <section class="container">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwabkCdjHnCs93SpKzfMiLNvFsDM7yimJHTB7grFuIqm8V-gRnTknTeVV-HahQscPhL2A&usqp=CAU" alt="Bootstrap" width="100" height="50" style="object-fit: contain;">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll nav-pills nav-justified" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                      <h4><a class="nav-link" aria-current="page" href="./index.html">Home</a></h4> 
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" id="searchForm">
+                  <input class="form-control me-2" type="search" placeholder="Search Product" aria-label="Search" id="searchProduct">
+                  <button class="btn btn-outline-success" type="submit" id="btnSearch">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+      </header>
+    </section>
+
+    <main>
+        <!-- Ccarousels -->
+        <section class="container">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://img.freepik.com/free-vector/horizontal-banner-template-black-friday-sales_23-2150867247.jpg?t=st=1723466964~exp=1723470564~hmac=8d144a44471d4efd8b4badce95f1dfac3f51d7f1a25cb0ce90d555bca4557e5c&w=1380" class="d-block w-100 custom-image" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://img.freepik.com/free-vector/flat-horizontal-banner-template-black-friday-sale_23-2150852978.jpg?t=st=1723467125~exp=1723470725~hmac=c8b29c63629e190a2cb50ca5cec648f4875a4b58cf48aad8793ba038c8ead68d&w=1380" class="d-block w-100 custom-image" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://imgs.search.brave.com/feMvdXTiaiY8iVcOQv144_O2_N05TqjNv5H4wnvF-Nk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYXJr/ZXRwbGFjZS5jYW52/YS5jb20vRUFFN0tv/N3ZlcG8vMS8wLzE2/MDB3L2NhbnZhLXNo/b3AtbmV3LXByb2R1/Y3RzLXdlYnNpdGUt/YmFubmVyLWJyb3du/LC13aGl0ZSwtdGFu/LUxrWnNOQ1czWDF3/LmpwZw" class="d-block w-100 custom-image" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <!-- Prodcut listing -->
+        <section class="container">
+            <div class="row gx-3 gy-3 product my-3" id="productDisplay">   
+            </div>
+            <h2></h2>
+        </section>
+        
+    </main>
+    
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    
+    
+</body>
+</html>
